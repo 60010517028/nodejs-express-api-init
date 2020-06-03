@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R tests/**/*.test.js && codecov -t 09df5bad-9fb6-4150-88a8-bc77c492e22f"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha -R tests/**/*.test.js && codecov -t 09df5bad-9fb6-4150-88a8-bc77c492e22f",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,18 +19,17 @@
   },
   "homepage": "https://github.com/pamontep/nodejs-express-api-init#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2",
-    "moment": "^2.20.1",
-    "request": "^2.83.0"
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "moment": "^2.26.0"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0",
-    "codecov": "^3.0.2",
+    "codecov": "^3.7.0",
     "expect.js": "^0.3.1",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "mocha": "^7.2.0",
+    "request": "^2.88.2",
+    "tape": "^4.13.3"
   }
 }
